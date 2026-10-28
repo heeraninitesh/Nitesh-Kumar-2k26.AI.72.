@@ -1,0 +1,18 @@
+marks = {
+    'Ali': 85,
+    'Sara': 95,
+    'Ahmed': 95,
+    'Noor': 78
+}
+
+# Find the highest mark
+highest = max(marks.values())
+
+# Find all students with the highest mark
+toppers = []
+for student, mark in marks.items():
+    if mark == highest:
+        toppers.append(student)
+        print(f"{student}: {mark}")
+
+print("\nToppers:", " and ".join(toppers))
